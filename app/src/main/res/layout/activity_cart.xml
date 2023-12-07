@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="cartVM" type="com.blommy.app.modules.cart.data.viewmodel.CartVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameCart"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_100">
+        <LinearLayout android:id="@+id/linearColumnarrowleft"
+            android:layout_gravity="bottom|start"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_marginBottom="@dimen/_6pxv"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="@dimen/_16pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCart"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_116pxh"
+                        android:layout_weight="0.72"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{cartVM.cartModel.txtCart}"
+                        style="@style/txtOutfitmedium20" tools:text="@string/lbl_cart"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerCart"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_50pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_26pxh}" tools:itemCount="3" tools:listitem="@layout/row_cart"/>
+            <FrameLayout
+                android:id="@+id/frameStackrectangletwentyseven"
+                android:layout_height="@dimen/_103pxv"
+                android:layout_marginTop="@dimen/_270pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageRectangleTwentySeven"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_103pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle27"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle27"/>
+                <LinearLayout android:id="@+id/linearRowrpcounterThree"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_28pxv"
+                    android:layout_marginEnd="@dimen/_13pxh"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_28pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylered_1">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtRpCounterThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_weight="0.77"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{cartVM.cartModel.txtRpCounterThree}"
+                        style="@style/txtOutfitmedium20_3" tools:text="@string/lbl_rp_124_000"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNext"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15pxv"
+                        android:layout_marginEnd="@dimen/_15pxh"
+                        android:layout_marginStart="@dimen/_176pxh"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_weight="0.23"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{cartVM.cartModel.txtNext}"
+                        style="@style/txtOutfitmedium14" tools:text="@string/lbl_next"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

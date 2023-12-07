@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="chatsSellerRowModel" type="com.blommy.app.modules.chatsseller.data.model.ChatsSellerRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowellipseone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_A700_8ecornerRadius">
+        <ImageView android:id="@+id/imageEllipseOne"
+            android:layout_height="@dimen/_44pxh"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="@dimen/_45pxh"
+            android:scaleType="centerCrop" circular="@{true}"
+            imageRes="@{@drawable/img_ellipse1_44x45}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1_44x45"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumndewafloristone"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_4pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.84" android:layout_width="0dp" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearRowdewafloristone"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDewaFloristOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_weight="0.66"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{chatsSellerRowModel.txtDewaFloristOne}"
+                    style="@style/txtOutfitmedium20_1" tools:text="@string/lbl_dewaflorist1"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTime"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_22pxv"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_weight="0.34"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{chatsSellerRowModel.txtTime}"
+                    style="@style/txtOutfitextralight14" tools:text="@string/lbl_09_30_am"/>
+            </LinearLayout>
+            <TextView android:id="@+id/txtLoremipsumdol"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="match_parent"
+                android:text="@{chatsSellerRowModel.txtLoremipsumdol}"
+                style="@style/txtOutfitlight12" tools:text="@string/msg_lorem_ipsum_dol"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

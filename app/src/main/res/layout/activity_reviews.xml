@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="reviewsVM" type="com.blommy.app.modules.reviews.data.viewmodel.ReviewsVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnarrowleft"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_29pxh"
+        android:layout_marginStart="@dimen/_28pxh"
+        android:layout_marginTop="@dimen/_44pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_100">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="@dimen/_16pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtReviews"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_100pxh"
+                    android:layout_weight="0.82"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{reviewsVM.reviewsModel.txtReviews}"
+                    style="@style/txtOutfitmedium20" tools:text="@string/lbl_reviews"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_marginTop="@dimen/_39pxv"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumngroup132"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/imageGroup132"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_marginEnd="@dimen/_81pxh"
+                    android:layout_marginStart="@dimen/_83pxh"
+                    android:layout_width="@dimen/_138pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group132"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group132"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowvector"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerListvector"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_weight="0.53"
+                        android:layout_width="0dp"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        itemSpace="@{@dimen/_3pxh}" tools:itemCount="5" tools:listitem="@layout/row_listvector"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnfortyeight"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="@dimen/_49pxh"
+                        android:layout_weight="0.47"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtFortyEight"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{reviewsVM.reviewsModel.txtFortyEight}"
+                            style="@style/txtOutfitlight77" tools:text="@string/lbl_4_82"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txt30reviews"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_7pxh"
+                            android:layout_marginStart="@dimen/_11pxh"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{reviewsVM.reviewsModel.txt30reviews}"
+                            style="@style/txtOutfitextralight16" tools:text="@string/lbl_30_reviews"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerListkatonabeatrix"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_54pxv"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_10pxh}" tools:itemCount="5" tools:listitem="@layout/row_listkatonabeatrix"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

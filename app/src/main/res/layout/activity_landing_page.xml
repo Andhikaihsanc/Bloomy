@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="landingPageVM" type="com.blommy.app.modules.landingpage.data.viewmodel.LandingPageVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumndownloadone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStack"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+            <FrameLayout android:id="@+id/frameStackdownloadone"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_800pxv"
+                android:layout_marginBottom="@dimen/_10pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageDownloadOne"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_download1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_download1"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtWELCOME"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_150pxv"
+                    android:layout_marginEnd="@dimen/_86pxh"
+                    android:layout_marginStart="@dimen/_86pxh"
+                    android:layout_marginTop="@dimen/_150pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{landingPageVM.landingPageModel.txtWELCOME}"
+                    style="@style/txtOutfitbold36" tools:text="@string/lbl_welcome"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackellipsefour"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_607pxv"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageEllipseFour"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse4}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse4"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnGetStarted"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_152pxv"
+                    android:layout_marginEnd="@dimen/_71pxh"
+                    android:layout_marginStart="@dimen/_71pxh"
+                    android:layout_marginTop="@dimen/_152pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_6pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_6pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_get_started"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_get_started"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackellipsethree"
+                android:layout_gravity="top|center"
+                android:layout_height="@dimen/_110pxv"
+                android:layout_marginBottom="@dimen/_365pxv"
+                android:layout_marginEnd="@dimen/_128pxh"
+                android:layout_marginStart="@dimen/_128pxh"
+                android:layout_marginTop="@dimen/_365pxv" android:layout_width="@dimen/_104pxh">
+                <View
+                    android:background="@drawable/rectangle_bg_white_a700_radius_52"
+                    android:id="@+id/viewEllipseThree"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_104pxh"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_104pxh"/>
+                <ImageView android:id="@+id/image9eb9fe966162490"
+                    android:layout_gravity="top|center"
+                    android:layout_height="@dimen/_98pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_6pxh"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_width="@dimen/_90pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_9eb9fe966162490}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_9eb9fe966162490"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

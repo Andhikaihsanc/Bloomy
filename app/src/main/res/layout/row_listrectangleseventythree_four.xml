@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectangleseventythreeFourRowModel" type="com.blommy.app.modules.productlistseller.data.model.ListrectangleseventythreeFourRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnOne"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/frameStackrectangleseventythreeFour"
+            android:layout_height="@dimen/_184pxv" android:layout_width="@dimen/_144pxh">
+            <LinearLayout
+                android:id="@+id/linearColumnrectangleseventythreeFour"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_1">
+                <ImageView
+                    android:id="@+id/imageRectangleSeventyThreeFour"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_105pxh"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="@dimen/_120pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtBouquetmawarFour"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{listrectangleseventythreeFourRowModel.txtBouquetmawarFour}"
+                    style="@style/txtRobotoromanbold10" tools:text="@string/lbl_bouquet_mawar"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDewafloristFour"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{listrectangleseventythreeFourRowModel.txtDewafloristFour}"
+                    style="@style/txtRobotoromanregular9" tools:text="@string/lbl_dewaflorist"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtRpCounterFour"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{listrectangleseventythreeFourRowModel.txtRpCounterFour}"
+                    style="@style/txtRobotoromanmedium12" tools:text="@string/lbl_rp_100_000"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearColumn"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_1">
+                <ImageView
+                    android:id="@+id/imageRectangleSeventyThreeOne"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_105pxh"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="@dimen/_120pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtBouquetmawarOne"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{listrectangleseventythreeFourRowModel.txtBouquetmawarOne}"
+                    style="@style/txtRobotoromanbold10" tools:text="@string/lbl_bouquet_mawar"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDewafloristOne"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{listrectangleseventythreeFourRowModel.txtDewafloristOne}"
+                    style="@style/txtRobotoromanregular9" tools:text="@string/lbl_dewaflorist"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtRpCounterOne"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{listrectangleseventythreeFourRowModel.txtRpCounterOne}"
+                    style="@style/txtRobotoromanmedium12" tools:text="@string/lbl_rp_100_000"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frameStackbouquetmawarTwo"
+            android:layout_height="@dimen/_184pxv"
+            android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_144pxh">
+            <FrameLayout
+                android:id="@+id/frameStackrectangleseventythreeTwo"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_184pxv"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_width="@dimen/_143pxh" style="@style/groupStylewhite_1">
+                <ImageView
+                    android:id="@+id/imageRectangleSeventyThreeTwo"
+                    android:layout_gravity="top|center"
+                    android:layout_height="@dimen/_105pxh"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="@dimen/_120pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end" android:gravity="center"
+                android:id="@+id/txtBouquetmawarTwo"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_44pxv"
+                android:layout_marginTop="@dimen/_44pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listrectangleseventythreeFourRowModel.txtBouquetmawarTwo}"
+                style="@style/txtRobotoromanbold10" tools:text="@string/lbl_bouquet_mawar"/>
+            <TextView android:ellipsize="end" android:gravity="center"
+                android:id="@+id/txtDewafloristTwo"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_26pxv"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listrectangleseventythreeFourRowModel.txtDewafloristTwo}"
+                style="@style/txtRobotoromanregular9" tools:text="@string/lbl_dewaflorist"/>
+            <TextView android:ellipsize="end" android:gravity="center"
+                android:id="@+id/txtRpCounterTwo"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listrectangleseventythreeFourRowModel.txtRpCounterTwo}"
+                style="@style/txtRobotoromanmedium12" tools:text="@string/lbl_rp_100_000"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

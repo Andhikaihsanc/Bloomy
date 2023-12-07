@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.blommy.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.blommy.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.blommy.app.modules.chats.ui.ChatsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.loginseller.ui.LoginSellerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.chatsseller.ui.ChatsSellerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.registerseller.ui.RegisterSellerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.blommy.app.modules.landingpage.ui.LandingPageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.blommy.app.modules.profileseller.ui.ProfileSellerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.productlistseller.ui.ProductListSellerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.editbarangseller.ui.EditBarangSellerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.register.ui.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.checkout.ui.CheckoutActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.personalreviews.ui.PersonalReviewsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.profile.ui.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.reviews.ui.ReviewsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.history.ui.HistoryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.personalreviewsone.ui.PersonalReviewsOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.home.ui.HomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.historyseller.ui.HistorySellerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.homeseller.ui.HomeSellerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.login.ui.LoginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.cart.ui.CartActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.productdesc.ui.ProductDescActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.productlist.ui.ProductListActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.tambahbarangseller.ui.TambahBarangSellerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.blommy.app.modules.addadress.ui.AddAdressActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

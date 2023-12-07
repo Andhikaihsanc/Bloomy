@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listellipseoneRowModel" type="com.blommy.app.modules.checkout.data.model.ListellipseoneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowellipseone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_A700_8ecornerRadius">
+        <ImageView android:id="@+id/imageEllipseOne"
+            android:layout_height="@dimen/_44pxh"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_45pxh"
+            android:scaleType="centerCrop" circular="@{true}"
+            imageRes="@{@drawable/img_ellipse1_44x45}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1_44x45"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnbouquetmawar"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3pxv"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_weight="0.73" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtBouquetMawar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listellipseoneRowModel.txtBouquetMawar}"
+                style="@style/txtOutfitmedium12" tools:text="@string/lbl_bouquet_mawar2"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listellipseoneRowModel.txtLanguage}"
+                style="@style/txtOutfitlight10_4" tools:text="@string/lbl_lorem_ipsum"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRpCounter"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listellipseoneRowModel.txtRpCounter}"
+                style="@style/txtOutfitregular13" tools:text="@string/lbl_rp_124_000"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtX1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_weight="0.07" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listellipseoneRowModel.txtX1}"
+            style="@style/txtOutfitregular15" tools:text="@string/lbl_x1"/>
+    </LinearLayout>
+</layout>

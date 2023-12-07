@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="gridrectangleseventythree1RowModel" type="com.blommy.app.modules.productlistseller.data.model.Gridrectangleseventythree1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnrectangleseventythree"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_1">
+        <ImageView android:id="@+id/imageRectangleSeventyThree"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_105pxh"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="@dimen/_120pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_ellipse1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtBouquetmawar"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{gridrectangleseventythree1RowModel.txtBouquetmawar}"
+            style="@style/txtRobotoromanbold10" tools:text="@string/lbl_bouquet_mawar"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtDewaflorist"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{gridrectangleseventythree1RowModel.txtDewaflorist}"
+            style="@style/txtRobotoromanregular9" tools:text="@string/lbl_dewaflorist"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtRpCounter"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{gridrectangleseventythree1RowModel.txtRpCounter}"
+            style="@style/txtRobotoromanmedium12" tools:text="@string/lbl_rp_100_000"/>
+    </LinearLayout>
+</layout>

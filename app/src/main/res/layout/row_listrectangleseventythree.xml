@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectangleseventythreeRowModel" type="com.blommy.app.modules.productlist.data.model.ListrectangleseventythreeRowModel"/>
+    </data>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerGridrectangleseventythree"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2" itemSpace="@{@dimen/_17pxh}"
+        tools:itemCount="4" tools:listitem="@layout/row_gridrectangleseventythree"/>
+</layout>
